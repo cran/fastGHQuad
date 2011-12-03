@@ -1,0 +1,16 @@
+81cbe7502072e1e672ae2101d956b56e *DESCRIPTION
+ebef93557404d3f443dc76deaffbba34 *NAMESPACE
+346baa2f9682b6363095f09a7e7e0909 *R/integrate.R
+2695595038a50c7695aa8ee569a3743d *R/lib.R
+84367fbccb7decda9bbb7b10ebb6ee15 *README
+1fe0ca3a7e64c4c60cecc08cfdbc975b *man/aghQuad.Rd
+2d04af48156187489e1163eaf5280325 *man/evalHermitePoly.Rd
+db5c46f71026c2cc56ef18a9d62bd2d2 *man/fastGHQuad-package.Rd
+f3e8c4a4e7bb37177f67c9199c04906f *man/findPolyRoots.Rd
+10febb7846153d229a7ff5c56d839cc8 *man/gaussHermiteData.Rd
+b0aea4e339f053324646d660106fb4e6 *man/ghQuad.Rd
+911a8359b3ab8ea32531608941656315 *man/hermitePolyCoef.Rd
+1ccf32b61df3cec0bdb09904bb68d5fb *src/Makevars
+003d1ecc3218e7889f2080cd72c2a11c *src/Makevars.win
+514f94d5ded5b7d2aa4e74bdbe1b5b26 *src/lib.cpp
+54d066b0d191e8c5186c09f806a5cf65 *src/lib.h

@@ -1,4 +1,5 @@
-81cbe7502072e1e672ae2101d956b56e *DESCRIPTION
+3f94dfe715dd8960bfad61a9596004d3 *ChangeLog
+01e357a278b169a8ea6845d7e34c0822 *DESCRIPTION
 ebef93557404d3f443dc76deaffbba34 *NAMESPACE
 346baa2f9682b6363095f09a7e7e0909 *R/integrate.R
 2695595038a50c7695aa8ee569a3743d *R/lib.R
@@ -12,5 +13,5 @@ b0aea4e339f053324646d660106fb4e6 *man/ghQuad.Rd
 911a8359b3ab8ea32531608941656315 *man/hermitePolyCoef.Rd
 1ccf32b61df3cec0bdb09904bb68d5fb *src/Makevars
 003d1ecc3218e7889f2080cd72c2a11c *src/Makevars.win
-514f94d5ded5b7d2aa4e74bdbe1b5b26 *src/lib.cpp
+8180f8716d775f0d645a1104dedc8300 *src/lib.cpp
 54d066b0d191e8c5186c09f806a5cf65 *src/lib.h

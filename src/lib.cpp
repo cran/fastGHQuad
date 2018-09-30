@@ -1,6 +1,7 @@
 #include "lib.h"
 
 using std::vector;
+using std::abs;
 
 void buildHermiteJacobi(int n, vector<double> *D, vector<double> *E) {
   //
@@ -328,7 +329,7 @@ int gaussHermiteDataDirect(int n, vector<double> *x, vector<double> *w) {
 
   // Calculate weights w
   int i;
-  double log2 = log(2.0), logsqrtpi = 0.5 * log(PI);
+  double log2 = log(2.0), logsqrtpi = 0.5 * log(M_PI);
   for (i = 0; i < n; i++) {
     // First, compute the log-weight
     (*w)[i] = (n - 1.) * log2 + lgamma(n + 1) + logsqrtpi -
@@ -339,7 +340,7 @@ int gaussHermiteDataDirect(int n, vector<double> *x, vector<double> *w) {
   return 0;
 }
 
-int gaussHermiteData(int n, vector<double> *x, vector<double> *w) {
+int gaussHermiteDataGolubWelsch(int n, vector<double> *x, vector<double> *w) {
   //
   // Calculates nodes & weights for Gauss-Hermite integration of order n
   //
@@ -355,7 +356,7 @@ int gaussHermiteData(int n, vector<double> *x, vector<double> *w) {
   buildHermiteJacobi(n, &D, &E);
 
   // Get nodes & weights
-  double mu0 = sqrt(PI);
+  double mu0 = sqrt(M_PI);
   quadInfoGolubWelsch(n, D, E, mu0, x, w);
 
   return 0;
@@ -371,7 +372,7 @@ SEXP gaussHermiteData(SEXP nR) {
   vector<double> x(n), w(n);
 
   // Build Gauss-Hermite integration rules
-  gaussHermiteData(n, &x, &w);
+  gaussHermiteDataGolubWelsch(n, &x, &w);
 
   // Build list for values
   return List::create(Named("x") = x, Named("w") = w);
